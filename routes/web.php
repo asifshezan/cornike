@@ -24,6 +24,7 @@ Route::get('about',[WebsiteController::class, 'about']);
 // Admin Panel Routes Start
 Route::get('dashboard',[AdminController::class, 'index']);
 
+// ALL USER ROUTE LIST
 Route::get('dashboard/user',[UserController::class, 'index'])->name('user.index');
 Route::get('dashboard/user/add',[UserController::class, 'add'])->name('user.create');
 Route::get('dashboard/user/edit/{id}',[UserController::class, 'edit']);
